@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="748.0" prefWidth="983.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.VP.controller.VehicleFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="276.0" layoutY="51.0" prefHeight="55.0" prefWidth="431.0" text="Vehicle">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblVehicle" layoutX="44.0" layoutY="154.0" prefHeight="556.0" prefWidth="896.0">
+        <columns>
+          <TableColumn fx:id="colVehicleNumber" prefWidth="198.0" text="Vehicle Number" />
+          <TableColumn fx:id="colVehicleType" prefWidth="235.0" text="Vehicle Type" />
+            <TableColumn fx:id="colMaximumWeight" prefWidth="233.0" text="Maximum Weight" />
+            <TableColumn fx:id="colNoOfPassengers" prefWidth="229.0" text="No Of Passengers" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
